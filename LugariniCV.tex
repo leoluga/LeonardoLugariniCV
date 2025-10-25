@@ -1,0 +1,82 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% ----- MODERNCV SETUP -----
+\moderncvstyle{classic}  % 'classic' or 'casual'
+\moderncvcolor{blue}     % 'blue', 'orange', 'green', 'red', 'purple', 'grey', 'black'
+
+% ----- STANDARD PACKAGES -----
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.75]{geometry}
+\usepackage{hyperref}
+
+% ----- PERSONAL DATA (Tailored for Google) -----
+\name{Leonardo A.}{Lugarini}
+\title{Software Engineer | AI/ML Researcher} % Tailored to the job title
+\phone[mobile]{+55 (41) 99659-2226}
+\email{lugaleonardo@gmail.com}
+\social[linkedin]{leonardo-antonio-lugarini-7769911a6}
+\social[github]{leoluga}
+\extrainfo{\href{http://lattes.cnpq.br/8964818253427490}{Curriculum Lattes}}
+
+% ----- CV DOCUMENT -----
+\begin{document}
+
+\makecvtitle
+
+% ----- PROFESSIONAL SUMMARY -----
+\small{Aerospace Engineer (B.S.) and Physics Master's student (M.S.) with 2+ years of experience in software development and AI/ML. Proven expertise in building and deploying C++ and Python-based systems for simulation, data processing, and quantitative analysis. Deeply skilled in AI/ML model development, including Deep Learning for complex physical systems. Seeking to leverage a strong foundation in large-scale systems and data to build next-generation AI solutions at Google.}
+\vspace{10pt}
+
+% ----- EDUCATION -----
+\section{Education}
+\cventry{2024 -- Present}{Master of Physics}{Aeronautics Institute of Technology (ITA)}{São José dos Campos, Brazil}{}{Focus: Developing Deep Learning models to predict nanoscale material properties by combining sparse experimental (sSNOM) data with physical models.}
+\cventry{2020 -- 2024}{Bachelor of Aerospace Engineering}{Aeronautics Institute of Technology (ITA)}{São José dos Campos, Brazil}{GPA: 8.9/10.0}{}
+
+% ----- EXPERIENCE -----
+\section{Experience}
+\cventry{Mar 2024 -- Present}{GNC Researcher}{Institute of Advanced Studies (IEAv)}{São José dos Campos, Brazil}{}{
+\begin{itemize}
+    \item Designed and developed a high-fidelity 6DOF simulation environment in C++ for rockets and hypersonic vehicles, focusing on aerodynamic model analysis and flight envelope validation.
+    \item Co-designed and deployed a team development server (Ubuntu LTS) with Gitea (Git) and Samba, improving version control and shared data access for research.
+    \item Leading development in C/C++ and Python within a collaborative Git-based workflow, managing complex codebases for simulation and analysis.
+\end{itemize}}
+
+\cventry{Apr 2023 -- Dez 2024}{Intern, Volatility Table}{Legacy Capital}{São Paulo, Brazil}{}{
+\begin{itemize}
+    \item Designed, developed, and maintained full-stack data processing and quantitative analysis tools using Python (Pandas, SQLAlchemy, Dash), Flask, and JavaScript (AG Grid).
+    \item Engineered and optimized data ingestion pipelines and complex SQL queries for a high-frequency volatility database.
+    \item Developed and evaluated quantitative trading strategies using time-series algorithms and rigorous backtesting frameworks; performed parameter optimization to enhance model performance.
+    \item Owned and refactored a legacy Python library, implementing design patterns to improve maintainability and extensibility for the quantitative research team.
+    \item Managed CI/CD pipelines and deployment using Git and Azure DevOps in a high-stakes, deadline-driven environment.
+\end{itemize}}
+
+\cventry{Apr 2024 -- Sep 2024}{Intern}{ITA Space Center (CEI)}{São José dos Campos, Brazil}{}{
+\begin{itemize}
+    \item Developed a Python library for processing and ingesting binary CCSDS space packets, enabling real-time telemetry analysis for the Sports Satellite Mission.
+    \item Built a telemetry data dashboard using the library, enabling rapid issue debugging and system monitoring.
+    \item Designed the initial software architecture for a CRUD application to manage the mission's satellite database.
+\end{itemize}}
+
+\cventry{Sep 2022 -- Sep 2023}{Scientific Initiation (PIBIC) Scholarship}{Aeronautics Institute of Technology (ITA)}{São José dos Campos, Brazil}{}{
+\begin{itemize}
+    \item Conducted computational physics research, implementing numerical models with Python (SciPy) to simulate quantum photon emissions and plasmon-polariton interactions.
+\end{itemize}}
+
+% ----- KEY AI/ML PROJECT -----
+\section{Key AI/ML Project (MS Thesis)}
+\cventry{2024 -- Present}{Deep Learning for sSNOM Data Analysis}{}{}{}{
+Developing and evaluating novel Deep Learning models (e.g., CNNs, Transformers) to interpret and predict nanoscale material properties from sparse sSNOM data. This research bridges physical models with advanced ML concepts to analyze complex, high-dimensional datasets.}
+
+% ----- TECHNICAL SKILLS -----
+\section{Technical Skills}
+\cvitem{AI/ML}{Deep Learning, ML Model Development \& Evaluation, Quantitative Modeling, Data Processing, Optimization, Pandas, NumPy, SciPy, MatLab}
+\cvitem{Programming}{Python, C/C++ (Advanced); SQL (Advanced); Go, HTML, CSS, VBA (Basic)}
+\cvitem{Developer Tools}{Git, Git Flow, Linux, Azure DevOps, Gitea, Docker, Samba}
+\cvitem{Engineering}{Fluid Simulation (SU2, GMSH), 6DOF Modeling, CCSDS Standards}
+
+% ----- LANGUAGES -----
+\section{Languages}
+\cvitem{English}{C2 Level (Certified)}
+\cvitem{Portuguese}{Native}
+
+\end{document}
