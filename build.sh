@@ -3,6 +3,14 @@
 # Stop the script if any command fails
 set -e
 
+# Check for pdflatex
+if ! command -v pdflatex &> /dev/null; then
+    echo "Error: pdflatex not found."
+    echo "Install MacTeX (full): brew install --cask mactex"
+    echo "Install BasicTeX (minimal): brew install --cask basictex"
+    exit 1
+fi
+
 echo "[1/4] Compiling LaTeX (Pass 1)..."
 pdflatex -interaction=nonstopmode LugariniCV.tex
 
